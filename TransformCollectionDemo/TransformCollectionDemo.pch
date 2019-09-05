@@ -1,0 +1,15 @@
+//
+//  TransformCollectionDemo.pch
+//  TransformCollectionDemo
+//
+//  Created by MaPengkun on 2019/9/4.
+//  Copyright © 2019 MaPengkun. All rights reserved.
+//
+
+#ifndef TransformCollectionDemo_pch
+#define TransformCollectionDemo_pch
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#endif /* TransformCollectionDemo_pch */
