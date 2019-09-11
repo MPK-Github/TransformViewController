@@ -8,12 +8,15 @@
 
 #import "ViewController.h"
 #import "TransformViewController.h"
+#import <SNSPSegmentView.h>
 
 @interface ViewController ()
 @property (nonatomic, copy) NSString *aaa;
 @property (nonatomic, strong) NSNumber *bbb;
 @property (nonatomic, assign) NSInteger ccc;
 @property (nonatomic, copy) dispatch_block_t ddd;
+@property (nonatomic, strong) SNSPSegmentView *segment;
+
 @end
 
 @implementation ViewController
