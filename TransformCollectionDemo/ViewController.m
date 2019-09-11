@@ -31,7 +31,7 @@
     btn.titleLabel.font = [UIFont systemFontOfSize:18];
     [btn addTarget:self action:@selector(pushAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
-    _segmentView = [[SNSPSegmentView alloc] initWithFrame:CGRectMake(150, 250, 207, 29) titleArray:@[@"首购奖",@"复购奖",@"单客奖"] currentSelectedIndex:0];
+    _segmentView = [[SNSPSegmentView alloc] initWithFrame:CGRectMake(250, 250, 207, 29) titleArray:@[@"首购奖",@"复购奖",@"单客奖"] currentSelectedIndex:0];
     _segmentView.backgroundColor = [UIColor whiteColor];
     [_segmentView drawView];
     _segmentView.selectedBlock = ^(NSInteger index) {
