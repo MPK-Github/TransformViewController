@@ -15,7 +15,7 @@
 @property (nonatomic, strong) NSNumber *bbb;
 @property (nonatomic, assign) NSInteger ccc;
 @property (nonatomic, copy) dispatch_block_t ddd;
-@property (nonatomic, strong) SNSPSegmentView *segment;
+@property (nonatomic, strong) SNSPSegmentView *segmentView;
 
 @end
 
@@ -31,6 +31,14 @@
     btn.titleLabel.font = [UIFont systemFontOfSize:18];
     [btn addTarget:self action:@selector(pushAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    _segmentView = [[SNSPSegmentView alloc] initWithFrame:CGRectMake(50, 250, 207, 29) titleArray:@[@"首购奖",@"复购奖",@"单客奖"] currentSelectedIndex:0];
+    _segmentView.backgroundColor = [UIColor whiteColor];
+    [_segmentView drawView];
+    _segmentView.selectedBlock = ^(NSInteger index) {
+        NSLog(@"selected is %ld",index);
+    };
+    [self.view addSubview:_segmentView];
+
 }
 #pragma mark -event
 - (void)pushAction {
